@@ -1,4 +1,3 @@
-
 FROM ubuntu:14.04
 MAINTAINER Zhihao Ding <zhihao.ding@gmail.com>
 LABEL Description="Telseq docker" Version="0.0.1"
