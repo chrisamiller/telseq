@@ -49,5 +49,8 @@ RUN mkdir -p /src && \
     make install
 
 
+# needed for MGI data mounts
+RUN apt-get update && apt-get install -y libnss-sss && apt-get clean all
+
 ENTRYPOINT ["/usr/local/bin/telseq"]
 CMD ["--help"]
